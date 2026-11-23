@@ -1,80 +1,10 @@
 
-<div class="gallery">
-
-  <div class="gallery-item">
-    <img src="images/IMG_2688.jpeg" alt="Deko Tattoo 1" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_4259.jpeg" alt="Deko Tattoo 2" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_4831.jpeg" alt="Deko Tattoo 3" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_5683.jpeg" alt="Deko Tattoo 4" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6096.jpeg" alt="Deko Tattoo 5" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6228.jpeg" alt="Deko Tattoo 6" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6414.jpeg" alt="Deko Tattoo 7" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6725.jpeg" alt="Deko Tattoo 8" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6760.jpeg" alt="Deko Tattoo 9" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_6863.jpeg" alt="Deko Tattoo 10" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7010.jpeg" alt="Deko Tattoo 11" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7158.jpeg" alt="Deko Tattoo 12" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7184.jpeg" alt="Deko Tattoo 13" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7251.jpeg" alt="Deko Tattoo 14" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7337.jpeg" alt="Deko Tattoo 15" loading="lazy">
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/IMG_7372.jpeg" alt="Deko Tattoo 16" loading="lazy">
-  </div>
-
-  <!-- Add photos 17 and 18 here when filenames are known -->
-
-</div>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Deko Tattoos - custom tattoos, fine line tattoos and professional piercings in Nairobi and Thika, Kenya.">
+<meta name="description" content="Deko Tattoos - custom tattoos, fine line tattoos and body piercings in Nairobi and Thika, Kenya.">
 <title>Deko Tattoos | Ink Your Story</title>
 
 <style>
@@ -137,6 +67,8 @@ nav a:hover {
   color: #aaa;
 }
 
+/* HOMEPAGE */
+
 .hero {
   min-height: 75vh;
   display: flex;
@@ -158,9 +90,9 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(65px, 10vw, 145px);
+  font-size: clamp(55px, 10vw, 145px);
   line-height: .88;
-  letter-spacing: -6px;
+  letter-spacing: -5px;
   margin: 25px 0;
 }
 
@@ -232,6 +164,8 @@ nav a:hover {
   word-spacing: 15px;
 }
 
+/* SECTIONS */
+
 section {
   padding: 90px 7%;
 }
@@ -249,6 +183,8 @@ section {
   letter-spacing: -2px;
 }
 
+/* ABOUT */
+
 .about {
   background: var(--dark);
 }
@@ -259,6 +195,8 @@ section {
   font-size: 18px;
   color: #ccc;
 }
+
+/* SERVICES */
 
 .services-grid {
   display: grid;
@@ -288,6 +226,8 @@ section {
   font-size: 20px;
 }
 
+/* TATTOO GALLERY */
+
 .portfolio {
   background: #151515;
 }
@@ -295,7 +235,7 @@ section {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 16px;
 }
 
 .gallery-item {
@@ -306,10 +246,10 @@ section {
 }
 
 .gallery-item img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   transition: transform .4s ease;
 }
 
@@ -331,21 +271,7 @@ section {
   pointer-events: none;
 }
 
-.gallery-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
-  color: #aaa;
-  border: 1px dashed #666;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.gallery-placeholder::after {
-  content: none;
-}
+/* CONTACT */
 
 .contact {
   text-align: center;
@@ -354,6 +280,10 @@ section {
 .contact p {
   color: #bbb;
   line-height: 1.8;
+}
+
+.contact .buttons {
+  justify-content: center;
 }
 
 .socials {
@@ -376,6 +306,8 @@ footer {
   color: #aaa;
   font-size: 12px;
 }
+
+/* MOBILE DESIGN */
 
 @media (max-width: 900px) {
   .hero {
@@ -434,6 +366,8 @@ footer {
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
   <a href="#home" class="logo">DEKO TATTOOS.</a>
 
@@ -448,8 +382,12 @@ footer {
 
 <main>
 
+<!-- HOMEPAGE -->
+
 <section class="hero" id="home">
+
   <div class="hero-content">
+
     <div class="eyebrow">
       Nairobi • Thika • Mobile Appointments
     </div>
@@ -463,6 +401,7 @@ footer {
     </p>
 
     <div class="buttons">
+
       <a href="#contact" class="btn btn-primary">
         Book an Appointment
       </a>
@@ -470,20 +409,27 @@ footer {
       <a href="#portfolio" class="btn">
         Explore Work
       </a>
+
     </div>
+
   </div>
 
   <div class="hero-art">
     <span>DEKO<br>TATTOOS</span>
   </div>
+
 </section>
 
 <div class="ticker">
   TATTOOS ✳ PIERCINGS ✳ SELF EXPRESSION ✳ DEKO TATTOOS
 </div>
 
+<!-- ABOUT -->
+
 <section class="about" id="about">
+
   <div class="section-label">01 / THE ARTIST</div>
+
   <h2 class="section-title">MEET DEKO.</h2>
 
   <p>
@@ -503,47 +449,63 @@ footer {
     mobile appointments for clients who prefer
     personalized service.
   </p>
+
 </section>
 
+<!-- SERVICES -->
+
 <section id="services">
+
   <div class="section-label">02 / WHAT WE DO</div>
+
   <h2 class="section-title">OUR SERVICES.</h2>
 
   <div class="services-grid">
 
     <div class="service-card">
       <h3>MINI TATTOOS</h3>
+
       <p>
         Small, meaningful designs for people who
         appreciate simple and beautiful body art.
       </p>
+
       <span class="price">From KSh 500</span>
     </div>
 
     <div class="service-card">
       <h3>CUSTOM TATTOOS</h3>
+
       <p>
         Personalized tattoo designs, fine line
         artwork, black and grey shading,
         and creative body art.
       </p>
+
       <span class="price">Price on Consultation</span>
     </div>
 
     <div class="service-card">
       <h3>BODY PIERCINGS</h3>
+
       <p>
         Body piercing appointments with attention
         to hygiene, placement and aftercare.
       </p>
+
       <span class="price">Ask for Pricing</span>
     </div>
 
   </div>
+
 </section>
 
+<!-- PORTFOLIO: ONE GALLERY ONLY -->
+
 <section class="portfolio" id="portfolio">
+
   <div class="section-label">03 / OUR WORK</div>
+
   <h2 class="section-title">THE PORTFOLIO.</h2>
 
   <p style="color:#aaa; margin-bottom:35px;">
@@ -555,94 +517,97 @@ footer {
 
     <div class="gallery-item">
       <img src="images/IMG_2688.jpeg"
-           alt="Tattoo artwork 1" loading="lazy">
+           alt="Deko tattoo artwork 1" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_4259.jpeg"
-           alt="Tattoo artwork 2" loading="lazy">
+           alt="Deko tattoo artwork 2" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_4831.jpeg"
-           alt="Tattoo artwork 3" loading="lazy">
+           alt="Deko tattoo artwork 3" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_5683.jpeg"
-           alt="Tattoo artwork 4" loading="lazy">
+           alt="Deko tattoo artwork 4" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_6096.jpeg"
-           alt="Tattoo artwork 5" loading="lazy">
+           alt="Deko tattoo artwork 5" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_6228.jpeg"
-           alt="Tattoo artwork 6" loading="lazy">
+           alt="Deko tattoo artwork 6" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_6414.jpeg"
-           alt="Tattoo artwork 7" loading="lazy">
+           alt="Deko tattoo artwork 7" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_6725.jpeg"
-           alt="Tattoo artwork 8" loading="lazy">
+           alt="Deko tattoo artwork 8" loading="lazy">
     </div>
 
     <div class="gallery-item">
       <img src="images/IMG_6760.jpeg"
-           alt="Tattoo artwork 9" loading="lazy">
+           alt="Deko tattoo artwork 9" loading="lazy">
     </div>
 
-    <!-- Remaining 9 photo slots.
-         Replace each placeholder with an image
-         when its exact filename is known. -->
-
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 10
+    <div class="gallery-item">
+      <img src="images/IMG_6863.jpeg"
+           alt="Deko tattoo artwork 10" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 11
+    <div class="gallery-item">
+      <img src="images/IMG_7010.jpeg"
+           alt="Deko tattoo artwork 11" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 12
+    <div class="gallery-item">
+      <img src="images/IMG_7158.jpeg"
+           alt="Deko tattoo artwork 12" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 13
+    <div class="gallery-item">
+      <img src="images/IMG_7184.jpeg"
+           alt="Deko tattoo artwork 13" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 14
+    <div class="gallery-item">
+      <img src="images/IMG_7251.jpeg"
+           alt="Deko tattoo artwork 14" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 15
+    <div class="gallery-item">
+      <img src="images/IMG_7337.jpeg"
+           alt="Deko tattoo artwork 15" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 16
+    <div class="gallery-item">
+      <img src="images/IMG_7372.jpeg"
+           alt="Deko tattoo artwork 16" loading="lazy">
     </div>
 
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 17
-    </div>
-
-    <div class="gallery-item gallery-placeholder">
-      PHOTO 18
-    </div>
+    <!-- Add photos 17 and 18 here
+         once their filenames are confirmed. -->
 
   </div>
+
 </section>
 
+<!-- CONTACT AND BOOKINGS -->
+
 <section class="contact" id="contact">
+
   <div class="section-label">04 / GET IN TOUCH</div>
+
   <h2 class="section-title">LET'S CREATE.</h2>
 
   <p>
@@ -654,28 +619,38 @@ footer {
     Nairobi • Thika • Mobile Appointments
   </p>
 
-  <div class="buttons" style="justify-content:center;">
+  <div class="buttons">
+
     <a class="btn btn-primary"
        href="https://www.instagram.com/deko._tattoos/"
-       target="_blank" rel="noopener noreferrer">
+       target="_blank"
+       rel="noopener noreferrer">
       Book Through Instagram
     </a>
+
   </div>
 
   <div class="socials">
+
     <a href="https://www.instagram.com/deko._tattoos/"
-       target="_blank" rel="noopener noreferrer">
+       target="_blank"
+       rel="noopener noreferrer">
       Instagram
     </a>
 
     <a href="https://www.tiktok.com/@dekohollic"
-       target="_blank" rel="noopener noreferrer">
+       target="_blank"
+       rel="noopener noreferrer">
       TikTok
     </a>
+
   </div>
+
 </section>
 
 </main>
+
+<!-- FOOTER -->
 
 <footer>
   <p>© <span id="year"></span> DEKO TATTOOS.</p>
