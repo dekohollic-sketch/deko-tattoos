@@ -1806,5 +1806,36 @@ document.getElementById("bookingForm")
 }
 </style>
 
+<!-- WHATSAPP BOOKING CLICK TRACKING -->
+
+<script>
+document.addEventListener("click", function(event) {
+
+  const link = event.target.closest("a[href]");
+
+  if (!link) return;
+
+  const url = link.getAttribute("href") || "";
+
+  if (
+    url.includes("wa.me/254790030106") ||
+    url.includes("api.whatsapp.com/send")
+  ) {
+
+    if (typeof gtag === "function") {
+
+      gtag("event", "whatsapp_booking_click", {
+        event_category: "Booking",
+        event_label: "WhatsApp Contact",
+        link_url: link.href
+      });
+
+    }
+
+  }
+
+});
+</script>
+
 </body>
 </html>
