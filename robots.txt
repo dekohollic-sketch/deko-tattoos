@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dekohollic-sketch.github.io/deko-tattoos/sitemap.xml
