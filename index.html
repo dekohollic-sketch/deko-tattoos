@@ -602,6 +602,113 @@ footer {
 
 </section>
 
+<!-- CUSTOMER BOOKING FORM -->
+
+<section id="booking" style="background:#191919;">
+  <div class="section-label">04 / APPOINTMENTS</div>
+  <h2 class="section-title">BOOK YOUR SESSION.</h2>
+
+  <p style="color:#bbb;line-height:1.8;">
+    Tell us what you have in mind.
+    Your booking request will be sent to WhatsApp.
+  </p>
+
+  <form id="bookingForm" style="max-width:600px;">
+
+    <label for="clientName">Your Name</label>
+    <input id="clientName" type="text" required
+      placeholder="Enter your name">
+
+    <label for="service">Choose Service</label>
+    <select id="service">
+      <option>Tattoo</option>
+      <option>Piercing</option>
+    </select>
+
+    <label for="location">Preferred Location</label>
+    <select id="location">
+      <option>Nairobi / Roysambu</option>
+      <option>Thika / Makongeni</option>
+      <option>Mobile Appointment</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input id="date" type="date" required>
+
+    <label for="details">Design or Piercing Details</label>
+    <textarea id="details" rows="4"
+      placeholder="Tell us about your idea..."></textarea>
+
+    <button type="submit" class="btn btn-primary"
+      style="cursor:pointer;margin-top:20px;">
+      Send Booking via WhatsApp
+    </button>
+
+  </form>
+</section>
+
+<style>
+#bookingForm label {
+  display:block;
+  margin:20px 0 8px;
+  font-size:13px;
+  letter-spacing:1px;
+}
+
+#bookingForm input,
+#bookingForm select,
+#bookingForm textarea {
+  width:100%;
+  padding:15px;
+  background:#101010;
+  border:1px solid #555;
+  border-radius:4px;
+  color:#fff;
+  font:inherit;
+}
+
+#bookingForm input:focus,
+#bookingForm select:focus,
+#bookingForm textarea:focus {
+  outline:2px solid #fff;
+}
+</style>
+
+<script>
+document.getElementById("date").min =
+  new Date().toLocaleDateString("en-CA");
+
+document.getElementById("bookingForm")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name =
+      document.getElementById("clientName").value;
+    const service =
+      document.getElementById("service").value;
+    const location =
+      document.getElementById("location").value;
+    const date =
+      document.getElementById("date").value;
+    const details =
+      document.getElementById("details").value;
+
+    const message =
+      "Hello Deko Tattoos! I would like to book an appointment.\n\n" +
+      "Name: " + name + "\n" +
+      "Service: " + service + "\n" +
+      "Location: " + location + "\n" +
+      "Preferred Date: " + date + "\n" +
+      "Details: " + details;
+
+    const url =
+      "https://wa.me/254790030106?text=" +
+      encodeURIComponent(message);
+
+    window.location.href = url;
+  });
+</script>
+
 <!-- CONTACT AND BOOKINGS -->
 
 <section class="contact" id="contact">
